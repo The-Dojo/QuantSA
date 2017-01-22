@@ -13,7 +13,7 @@ namespace QuantSA.Excel
     {
         [ExcelFunction(Description = "",
         Name = "QSA.LatestError",
-        Category = "QSA.General",
+        Category = "DBSA",
         IsMacroType = true,
         IsHidden = true)]
         public static object LatestError()
@@ -40,7 +40,7 @@ namespace QuantSA.Excel
 
         [ExcelFunction(Description = "",
             Name = "QSA.OpenExampleSheetsDir",
-            Category = "QSA.General",
+            Category = "DBSA",
             IsMacroType = true,
             IsHidden = true)]
         public static object OpenExampleSheetsDir()
@@ -51,7 +51,7 @@ namespace QuantSA.Excel
 
         [QuantSAExcelFunction(Description = "Create a C# representation of data in a spreadsheet.",
             Name = "QSA.GetCSArray",
-            Category = "QSA.General",
+            Category = "DBSA",
             ExampleSheet = "Introduction.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/GetCSArray.html")]
@@ -88,7 +88,7 @@ namespace QuantSA.Excel
         //var dir = AppDomain.CurrentDomain.BaseDirectory;
         [QuantSAExcelFunction(Description = "Get a string representing the path in which QuantSA is intalled.",
             Name = "QSA.GetInstallPath",
-            Category = "QSA.General",
+            Category = "DBSA",
             ExampleSheet = "CreateProductFromFile.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/GetInstallPath.html")]
@@ -106,7 +106,7 @@ namespace QuantSA.Excel
 
         [QuantSAExcelFunction(Description = "Get a list of available results in the results object.",
             Name = "QSA.GetAvailableResults",
-            Category = "QSA.General",
+            Category = "DBSA",
             ExampleSheet = "ZARSwap.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/GetAvailableResults.html")]
@@ -131,7 +131,7 @@ namespace QuantSA.Excel
 
         [QuantSAExcelFunction(Description = "Get the stored results of a calculation from a results object.",
             Name = "QSA.GetResults",
-            Category = "QSA.General",
+            Category = "DBSA",
             ExampleSheet = "ZARSwap.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/GetResults.html")]
@@ -167,7 +167,7 @@ namespace QuantSA.Excel
             IsHidden = false,
             Name = "QSA.FormulaBlackScholes",
             ExampleSheet = "EquityValuation.xlsx",
-            Category = "QSA.General",
+            Category = "DBSA",
             HelpTopic = "http://www.quantsa.org/FormulaBlackScholes.html")]
         public static object FormulaBlackScholes([ExcelArgument(Description = "Strike")]object[,] strike,
             [ExcelArgument(Description = "The value date as and Excel date.")]object[,] valueDate,
@@ -192,7 +192,7 @@ namespace QuantSA.Excel
         [QuantSAExcelFunction(Description = "Create a product defined in a script file.",
             IsHidden = false,
             Name = "QSA.CreateProductFromFile",
-            Category = "QSA.General",
+            Category = "DBSA",
             ExampleSheet = "CreateProductFromFile.xlsx",
             HelpTopic = "http://www.quantsa.org/CreateProductFromFile.html")]
         public static object CreateProductFromFile([ExcelArgument(Description = "Name of product")]string name,
@@ -214,7 +214,7 @@ namespace QuantSA.Excel
             IsHidden = false,
             Name = "QSA.InterpLinear",
             ExampleSheet = "InterpLinear.xlsx",
-            Category = "QSA.General",
+            Category = "DBSA",
             HelpTopic = "http://www.quantsa.org/InterpLinear.html")]
         public static object[,] InterpLinear([ExcelArgument(Description = "A vector of x values.  Must be in increasing order")]double[] knownX,
             [ExcelArgument(Description = "A vector of y values.  Must be the same length as knownX")]Double[] knownY,

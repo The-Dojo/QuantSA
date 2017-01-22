@@ -9,7 +9,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create a par style CDS.  Protection will always apply from the value date until the last payment date.",
             Name = "QSA.CreateCDS",
             HasGeneratedVersion = true,
-            Category = "QSA.Credit",
+            Category = "DBSA",
             ExampleSheet = "CDS.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateCDS.html")]
@@ -27,7 +27,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create a model that will simulate a single FX process and default for a single reference entity.",
             Name = "QSA.CreateModelDeterministicCreditWithFXJump",
             HasGeneratedVersion = true,
-            Category = "QSA.Credit",
+            Category = "DBSA",
             ExampleSheet = "CDS.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateModelDeterministicCreditWithFXJump.html")]
@@ -48,7 +48,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create hazard rate curve that can be used to provide survival probabilities for a reference entity between dates.",
             Name = "QSA.CreateHazardCurve",
             HasGeneratedVersion = true,
-            Category = "QSA.Credit",
+            Category = "DBSA",
             ExampleSheet = "CDS.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateHazardCurve.html")]
@@ -64,7 +64,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Get the survival probability from the anchor date until a date or between two dates.",
             Name = "QSA.GetSurvivalProb",
             HasGeneratedVersion = true,
-            Category = "QSA.Credit",
+            Category = "DBSA",
             ExampleSheet = "CDS.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/GetSurvivalProb.html")]

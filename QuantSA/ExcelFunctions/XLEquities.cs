@@ -9,7 +9,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create a model that simulates multiple equites in one currency.  Assumes lognormal dynamics.",
             Name = "QSA.CreateEquityModel",
             HasGeneratedVersion = true,
-            Category = "QSA.Equities",
+            Category = "DBSA",
             ExampleSheet = "EquityValuation.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateEquityModel.html")]
@@ -29,7 +29,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create a model that simulates multiple equites in one currency.  Assumes lognormal dynamics.",
             Name = "QSA.CreateEquityCall",
             HasGeneratedVersion = true,
-            Category = "QSA.Equities",
+            Category = "DBSA",
             ExampleSheet = "EquityValuation.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateEquityCall.html")]

@@ -10,7 +10,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.FitCurveNelsonSiegel",
             HasGeneratedVersion = true,
             ExampleSheet = "FitCurveNelsonSiegel.xlsx",
-            Category = "QSA.Curves",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/FitCurveNelsonSiegel.html")]
         public static ICurve FitCurveNelsonSiegel([ExcelArgument(Description = "The date at which the resultant curve will be anchored.  Can be set to zero.")]Date anchorDate,
@@ -25,7 +25,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CurveInterp",
             HasGeneratedVersion = true,
             ExampleSheet = "FitCurveNelsonSiegel.xlsx",
-            Category = "QSA.Curves",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CurveInterp.html")]
         public static double[,] CurveInterp([ExcelArgument(Description = "The curve to interpolate.")]ICurve curve,
@@ -48,7 +48,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CreatePCACurveSimulator",
             HasGeneratedVersion = true,
             ExampleSheet = "PCA.xlsx",
-            Category = "QSA.Curves",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreatePCACurveSimulator.html")]
         public static object CreatePCACurveSimulator([ExcelArgument(Description = "The date from which the curve dates will be calculated.")]Date anchorDate,
@@ -69,7 +69,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.PCACurveSimulatorGetRates",
             HasGeneratedVersion = true,
             ExampleSheet = "PCA.xlsx",
-            Category = "QSA.Curves",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/PCACurveSimulatorGetRates.html")]
         public static double[,] PCACurveSimulatorGetRates([ExcelArgument(Description = "The simulator.")]PCACurveSimulator simulator,
@@ -84,7 +84,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CreateDatesAndRatesCurve",
             HasGeneratedVersion = true,
             ExampleSheet = "GeneralSwap.xlsx",
-            Category = "QSA.Curves",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateDatesAndRatesCurve.html")]
         public static IDiscountingSource CreateDatesAndRatesCurve([ExcelArgument(Description = "The dates at which the rates apply.")]Date[] dates,
@@ -100,7 +100,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CovarianceFromCurves",
             HasGeneratedVersion = true,
             ExampleSheet = "PCA.xlsx",
-            Category = "QSA.Curves",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CovarianceFromCurves.html")]
         public static double[,] CovarianceFromCurves([ExcelArgument(Description = "Blob of curves, each row is a curve of the same length.")]double[,] curves)
@@ -112,7 +112,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Perform a PCA on the log returns of a blob of curves.",
             Name = "QSA.PCAFromCurves",
             HasGeneratedVersion = true,
-            Category = "QSA.Curves",
+            Category = "DBSA",
             ExampleSheet = "PCA.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/PCAFromCurves.html")]

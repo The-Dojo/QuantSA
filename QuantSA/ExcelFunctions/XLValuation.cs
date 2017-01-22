@@ -11,7 +11,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create a curve based valuation model.",
             Name = "QSA.CreateCurveModel",
             HasGeneratedVersion = true,
-            Category = "QSA.Valuation",
+            Category = "DBSA",
             ExampleSheet = "GeneralSwap.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateCurveModel.html")]
@@ -28,7 +28,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Perform a general valuation.",
             Name = "QSA.Value",
             HasGeneratedVersion = true,
-            Category = "QSA.Valuation",
+            Category = "DBSA",
             ExampleSheet = "GeneralSwap.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/Value.html")]
@@ -50,7 +50,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Calculate the expected positive exposure for a general portfolio",
             Name = "QSA.EPE",
             HasGeneratedVersion = true,
-            Category = "QSA.Valuation",
+            Category = "DBSA",
             ExampleSheet = "EPE.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/EPE.html")]
@@ -68,7 +68,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "",
             Name = "QSA.PFE",
             HasGeneratedVersion = true,
-            Category = "QSA.Valuation",
+            Category = "DBSA",
             ExampleSheet = "PFE.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/EPE.html")]

@@ -14,7 +14,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CreateFixedLeg",
             HasGeneratedVersion = true,
             ExampleSheet = "GeneralSwap.xlsx",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateFixedLeg.html")]
         public static FixedLeg CreateFixedLeg([ExcelArgument(Description = "The currency of the cashflows.")]Currency currency,
@@ -30,7 +30,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CreateFloatLeg",
             HasGeneratedVersion =true,
             ExampleSheet = "GeneralSwap.xlsx",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateFloatLeg.html")]
         public static FloatLeg CreateFloatLeg([ExcelArgument(Description = "The currency of the cashflows. (Currency)")]Currency currency,
@@ -48,7 +48,7 @@ namespace QuantSA.ExcelFunctions
 
         [QuantSAExcelFunction(Description = "Create a general set of cashflows that can be valued like any other product.",
             Name = "QSA.CreateCashLeg",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             HasGeneratedVersion = true,
             ExampleSheet = "GeneralSwap.xlsx",
             IsHidden = false,
@@ -64,7 +64,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CreateZARBermudanSwaption",
             HasGeneratedVersion = true,
             ExampleSheet = "BermudanSwaption.xlsx",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateZARBermudanSwaption.html")]
         public static BermudanSwaption CreateZARBermudanSwaption([ExcelArgument(Description = "The exercise dates.  The dates on which the person who is long optionality can exercise.")]Date[] exerciseDates,
@@ -83,7 +83,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CreateZARSwap",
             HasGeneratedVersion = true,
             ExampleSheet = "ZARSwap.xlsx", 
-            Category = "QSA.Rates",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateZARSwap.html")]
         public static IRSwap CreateZARSwap([ExcelArgument(Description = "First reset date of the swap")]Date startDate,
@@ -99,7 +99,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.ValueZARSwap",
             HasGeneratedVersion = true,
             ExampleSheet = "ZARSwap.xlsx",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/ValueZARSwap.html")]
         public static double ValueZARSwap1Curve([ExcelArgument(Description = "The name of the swap.")]IRSwap swap,
@@ -133,7 +133,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.CreateRateForecastCurveFromDiscount",
             HasGeneratedVersion = true,
             ExampleSheet = "GeneralSwap.xlsx",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateRateForecastCurveFromDiscount.html")]
         public static IFloatingRateSource CreateRateForecastCurveFromDiscount([ExcelArgument(Description = "The floating rate that this curve will be used to forecast.")]FloatingIndex floatingRateIndex,
@@ -156,7 +156,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Get the discount factor from a curve object.  The DF will be from the anchor date until the supplied date.",
             Name = "QSA.GetDF",
             HasGeneratedVersion = true,
-            Category = "QSA.Rates",
+            Category = "DBSA",
             ExampleSheet = "Introduction.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/GetDF.html")]
@@ -169,7 +169,7 @@ namespace QuantSA.ExcelFunctions
 
         [QuantSAExcelFunction(Description = "Create fixed rate loan.",
             Name = "QSA.CreateLoanFixedRate",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             HasGeneratedVersion = true,
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateLoanFixedRate.html",
@@ -186,7 +186,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create floationg rate loan.",
         Name = "QSA.CreateLoanFloatingRate",
             HasGeneratedVersion = true,
-        Category = "QSA.Rates",
+        Category = "DBSA",
         IsHidden = false,
         HelpTopic = "http://www.quantsa.org/CreateLoanFloatingRate.html",
             ExampleSheet = "Loans.xlsx")]
@@ -202,7 +202,7 @@ namespace QuantSA.ExcelFunctions
 
         [QuantSAExcelFunction(Description = "Create demo Hull White model.  Will be used for discounting and forecasting any indices specified.",
             Name = "QSA.CreateHWModelDemo",
-            Category = "QSA.Rates",
+            Category = "DBSA",
             HasGeneratedVersion = true,
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateHWModelDemo.html",

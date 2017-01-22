@@ -12,7 +12,7 @@ namespace QuantSA.ExcelFunctions
         [QuantSAExcelFunction(Description = "Create a curve to be used for FX rate forecasting.",
             Name = "QSA.CreateFXForecastCurve",
             HasGeneratedVersion = true,
-            Category = "QSA.FX",
+            Category = "DBSA",
             ExampleSheet = "GeneralSwap.xlsx",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/CreateFXForecastCurve.html")]
@@ -30,7 +30,7 @@ namespace QuantSA.ExcelFunctions
             Name = "QSA.GetFXRate",
             HasGeneratedVersion = true,
             ExampleSheet = "Introduction.xlsx",
-            Category = "QSA.FX",
+            Category = "DBSA",
             IsHidden = false,
             HelpTopic = "http://www.quantsa.org/GetFXRate.html")]
         public static double GetFXRate([ExcelArgument(Description = "Name of FX curve")]IFXSource fxCurve,
@@ -44,7 +44,7 @@ namespace QuantSA.ExcelFunctions
                 Name = "QSA.CreateMultiHWAndFXToy",
                 HasGeneratedVersion = true,
                 ExampleSheet = "MultiFX_PFE.xlsx",
-                Category = "QSA.FX",
+                Category = "DBSA",
                 IsHidden = false,
                 HelpTopic = "http://www.quantsa.org/CreateMultiHWAndFXToy.html")]
         public static NumeraireSimulator CreateMultiHWAndFXToy([ExcelArgument(Description = "The date from which the model applies")]Date anchorDate,

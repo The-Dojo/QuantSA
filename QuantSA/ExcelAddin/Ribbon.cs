@@ -40,7 +40,7 @@ public class Ribbon : ExcelRibbon
         string customUIStart = @"<customUI xmlns='http://schemas.microsoft.com/office/2006/01/customui' loadImage='LoadImage'>
                 <ribbon>
                 <tabs>
-                <tab id='tabQuantSA' label='QuantSA'>";
+                <tab id='tabQuantSA' label='DBSATreasTools'>";
 
         string customUIEnd = @"</tab>
                 </tabs>
@@ -78,7 +78,7 @@ public class Ribbon : ExcelRibbon
         return base.LoadImage(imageId);
     }
 
-    [ExcelFunction(IsMacroType = true, Description = "Show information about QuantSA", Name = "QSA.ShowAbout", Category = "QSA.General", IsHidden = true)]
+    [ExcelFunction(IsMacroType = true, Description = "Show information about QuantSA", Name = "QSA.ShowAbout", Category = "DBSA", IsHidden = true)]
     public static int ShowAbout()
     {
         ExcelMessage em = new ExcelMessage("QuantSA", "QuantSA is an open source library for quantitative finance, customized for the South African market\n\n" +
